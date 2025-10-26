@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Circulus Casa</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="circles.html">FIND CIRCLES</a></li>
+                    <li><a href="mycircles.html">MY CIRCLES</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" placeholder="Type to text">
+                <a href="#"><button class="btn">Search</button></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Circulus Casa <br><br>Prototype</h1>
+            <p class="par">Our savings website for low-income families and youth is built
+                <br>using a user-centered, iterative approach. 
+                <br>We start by understanding the needs, challenges, and saving 
+                <br>habits of our audience through surveys and interviews. 
+                <br>The site is designed to be simple and intuitive, offering features
+                <br> like goal tracking, financial tips, and gamification elements to make saving engaging. 
+                <br>We test an initial version with users, gather feedback, and continuously refine the website. 
+                <br>By monitoring user behavior and engagement, we ensure the platform effectively
+                <br> helps families and youth build better saving habits.</p>
+
+            <button class="cn"><a href="#">JOIN US</a></button>
+
+            <div class="form">
+                <h2>Login Here</h2>
+                <input id="username" name="username" placeholder="Enter User Name Here">
+                <input id="password" name="password" placeholder="Enter Password Here">
+                <button class="btn" onclick="login()">Login</button>
+
+                <p class="link">Don't have an account<br>
+                    <a href="#">Register Here</a>
+                </p>
+                <a href="liw.html">Log in</a>
+            </div>
+        </div>
+    </div>
+
+    <script> 
+        async function login() {
+            const username = document.getElementById("username").value.trim();
+            const password = document.getElementById("password").value.trim();
+
+            if (!username || !password) {
+                alert("Please enter both username and password.");
+                return;
+            }
+            // add login logic here
+        }
+    </script>
+</body>
+</html>
+
